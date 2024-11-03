@@ -2,6 +2,18 @@
 
 Este proyecto es la resolución del primer parcial de la materia desarrollo de software, que consiste en crear una API REST utilizando Java,springboot, H2 y luego desplegarla en Render.
 
+## Descripción del examen
+Magneto quiere reclutar la mayor cantidad de mutantes para poder luchar contra los X-Mens.
+
+Te ha contratado a ti para que desarrolles un proyecto que detecte si un humano es mutante basándose en su secuencia de ADN.
+
+Para eso te ha pedido crear un programa con un método o función con la siguiente firma:
+
+**boolean isMutant(String[] dna);**
+
+En donde recibirás como parámetro un array de Strings que representan cada fila de una tabla de (NxN) con la secuencia del ADN. Las letras de los Strings solo pueden ser: (A,T,C,G), las cuales representa cada base nitrogenada del ADN.
+
+Sabrás si un humano es mutante, si encuentras más de una secuencia de cuatro letras iguales, de forma oblicua, horizontal o vertical.
 
 ## Descripción del Proyecto
 
@@ -21,6 +33,7 @@ Este proyecto es una API REST desarrollada en Java utilizando Spring Boot. La ba
 
 
 ## Ejecucion del proyecto en Render
+Para ejecutar el proyecto en render copia el link en tu navegador y agrega alguno de los endpoints "/mutant/" o "/stats" o copia alguno de los ejemplos de abajo.En el caso del Post es recomendable usar alguna herramienta como POSTMAN
 1. Link en render:
 
    ```bash
