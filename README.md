@@ -1,17 +1,7 @@
 # API REST Mutantes
 
-Este proyecto es la resolución del primer parcial, que consiste en crear una API REST utilizando Java,springboot, H2 y luego desplegarla en Render.
+Este proyecto es la resolución del primer parcial de la materia desarrollo de software, que consiste en crear una API REST utilizando Java,springboot, H2 y luego desplegarla en Render.
 
-## Tabla de Contenidos
-
-- [Descripción del Proyecto](#descripción-del-proyecto)
-- [Tecnologías Utilizadas](#tecnologías-utilizadas)
-- [Configuración del Proyecto](#configuración-del-proyecto)
-- [Ejecución Local](#ejecución-local)
-- [Despliegue en Render](#despliegue-en-render)
-- [Endpoints](#endpoints)
-- [Contribución](#contribución)
-- [Licencia](#licencia)
 
 ## Descripción del Proyecto
 
@@ -19,23 +9,41 @@ Este proyecto es una API REST desarrollada en Java utilizando Spring Boot. La ba
 
 ## Tecnologías Utilizadas
 
-- **Java**: Lenguaje de programación principal.
-- **Spring Boot**: Framework para desarrollar aplicaciones Java.
-- **H2**: Base de datos en memoria.
-- **Gradle**: Herramienta de gestión de dependencias y construcción de proyectos.
+- **Java**: Lenguaje de programación.
+- **JPA**: Java Persistence API.
+- **Hibernate**: Implementación de JPA.
+- **Envers**: Biblioteca para auditoría de datos.
+- **Lombok**: Biblioteca para reducir el código boilerplate.
+- **Gradle**: Herramienta de gestión de dependencias.
+- **H2**: Sistema de gestión de bases de datos relacionales.
+- **Spring Boot**: Framework para la creación de aplicaciones Java.
 - **Render**: Plataforma de despliegue en la nube.
+
 
 ## Ejecucion del proyecto en Render
 1. Link en render:
 
    ```bash
    https://parcialmutantes-visedomatias.onrender.com
-2. Endspoints:
-  POST:
+2. Ejemplo POST:
    ```bash
-   /mutant/
-  GET:
-   ```bash
-   /stats
+   https://parcialmutantes-visedomatias.onrender.com/mutant/
+
+ Body:
+  { 
+        "dna": ["ATGATT",
+                "CGATGA",
+                "GTATGA",
+                "TAGTAC",
+                "TGATCG",
+                "AAAATG"] 
+ }
+ 
+   
+3. Ejemplo GET:
+    ```bash
+   https://parcialmutantes-visedomatias.onrender.com/stats
+   
+
 
 
